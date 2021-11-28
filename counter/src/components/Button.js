@@ -4,7 +4,7 @@ export const Button = ({ title }) => {
   return (
     <div>
       <button>{title}</button>
-      <button>ボタン２</button>
+      <button>ボタン</button>
     </div>
   );
 };
