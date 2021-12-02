@@ -16,19 +16,35 @@ export const Counter = () => {
 
   return (
     <div>
-      <p>{count}</p>
-      <Button onClick={plus}></Button>
-      <button onclick={plus}>+</button>
-      <Button onclick={minus}></Button>
+      <p style={style.text}>{count}</p>
+      <div style={style.position}>
+        <button onClick={plus} style={style.button}>
+          <Button title="+" />
+        </button>
+        <button onClick={minus} style={style.button}>
+          <Button title="-" />
+        </button>
+      </div>
     </div>
   );
 };
 
 const style = {
   text: {
-    fontSize: 40,
+    fontSize: "100px",
+    color: "black",
+    textAlign: "center",
   },
   button: {
-    backgroundColor: "red",
+    fontSize: "20px",
+    height: "50px",
+    width: "100px",
+    backgroundColor: "#b4c1d1",
+    borderRadius: "100vh",
+    border: "2px ridge #b4c1d1",
+  },
+  position: {
+    display: "flex",
+    justfyContent: "center",
   },
 };
