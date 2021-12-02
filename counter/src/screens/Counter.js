@@ -16,9 +16,19 @@ export const Counter = () => {
 
   return (
     <div>
-      <p style={{ fontSize: 40 }}>0</p>
-      <Button title="プラス" />
-      <Button title="マイナス" />
+      <p>{count}</p>
+      <Button onClick={plus}></Button>
+      <button onclick={plus}>+</button>
+      <Button onclick={minus}></Button>
     </div>
   );
+};
+
+const style = {
+  text: {
+    fontSize: 40,
+  },
+  button: {
+    backgroundColor: "red",
+  },
 };
