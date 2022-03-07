@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./app/App";
-// ./:は同じ階層を示す
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

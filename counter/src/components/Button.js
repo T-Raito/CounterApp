@@ -1,5 +1,18 @@
-// import React, { useState } from "react";
+export const Button = ({ title, onClick }) => {
+  return (
+    <button onClick={onClick} style={style.button}>
+      {title}
+    </button>
+  );
+};
 
-export const Button = ({ title }) => {
-  return <p>{title}</p>;
+const style = {
+  button: {
+    width: "50px",
+    height: "50px",
+    marginRight: "50px",
+    marginLeft: "50px",
+    fontSize: "45px",
+    textAlign: "center",
+  },
 };

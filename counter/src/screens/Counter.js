@@ -15,17 +15,13 @@ export const Counter = () => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <p style={style.text}>{count}</p>
       <div style={style.position}>
-        <button onClick={plus} style={style.button}>
-          <Button title="+" />
-        </button>
-        <button onClick={minus} style={style.button}>
-          <Button title="-" />
-        </button>
+        <Button title="+" onClick={plus} />
+        <Button title="−" onClick={minus} />
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 
@@ -35,16 +31,8 @@ const style = {
     color: "black",
     textAlign: "center",
   },
-  button: {
-    fontSize: "20px",
-    height: "50px",
-    width: "100px",
-    backgroundColor: "#b4c1d1",
-    borderRadius: "100vh",
-    border: "2px ridge #b4c1d1",
-  },
   position: {
     display: "flex",
-    justfyContent: "center",
+    justifyContent: "center",
   },
 };
